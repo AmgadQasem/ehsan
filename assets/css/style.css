@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.offcanvas {
+    background-color: #fff;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00755E;
+}
+
+.nav-link i {
+    color: #00755E;
+    width: 20px;
+    text-align: center;
+}
+
+#donationMenu .nav-link {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+#donationMenu .nav-link:hover {
+    color: #00755E;
+}
+
+.btn-close {
+    font-size: 0.8rem;
+}
+
+.bg-success-dark {
+    background-color: #004D3E;
+}
+
+footer h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+footer .list-unstyled li {
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+footer .border {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+footer .border:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Mega Menu Styles */
+.mega-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.mega-menu.show {
+    top: 76px;
+    /* Height of navbar */
+    opacity: 1;
+}
+
+.mega-menu-header {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.mega-menu-content {
+    padding: 2rem 0;
+}
+
+.mega-menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mega-menu-item {
+    flex: 0 0 auto;
+}
+
+.mega-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.mega-menu-link:hover {
+    background: rgba(0, 117, 94, 0.1);
+    color: #00755E;
+}
+
+.mega-menu-link img {
+    width: 24px;
+    height: 24px;
+    margin-left: 0.75rem;
+}
+
+/* Override default dropdown styles */
+.nav-item .dropdown-toggle::after {
+    display: none;
+}
+
+.nav-item .nav-link {
+    cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+    .offcanvas {
+        width: 85% !important;
+    }
+
+    .offcanvas-header {
+        padding: 1.5rem 1rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .offcanvas-logo {
+        height: 40px;
+    }
+
+    .offcanvas .navbar-nav {
+        padding: 0;
+    }
+
+    .offcanvas .nav-item {
+        border-bottom: 1px solid #eee;
+    }
+
+    .offcanvas .nav-link {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #333;
+    }
+
+    .nav-link-content {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .offcanvas .collapse .nav-item {
+        border-bottom: none;
+    }
+
+    .offcanvas .collapse .nav-link {
+        padding: 0.75rem 2.5rem;
+    }
+
+    .offcanvas .fa-chevron-down {
+        font-size: 0.8rem;
+        color: #666;
+    }
+
+    /* Hide desktop nav items in mobile */
+    .navbar-nav.desktop-nav {
+        display: none;
+    }
+}
+
+/* Hide mobile nav items in desktop */
+@media (min-width: 992px) {
+    .navbar-nav.mobile-nav {
+        display: none;
+    }
+}
+
+/* Original desktop styles */
+@media (min-width: 992px) {
+    .nav-link {
+        color: #333;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #00755E;
+    }
+
+    .nav-link i {
+        color: #666;
+        font-size: 0.8rem;
+    }
+
+    .desktop-nav .nav-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .desktop-nav .nav-link-content {
+        display: inline;
+        gap: 0;
+    }
+}
+
+/* Floating Button Styles */
+.floating-btn-container {
+    position: fixed;
+    top: 80px; 
+    right: 15px;
+    z-index: 1000;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 20px 20px 10px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+/* Donation Sidebar Styles */
+.donation-sidebar {
+    position: fixed;
+    top: 76px; /* Height of navbar */
+    right: -320px;
+    width: 320px;
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.donation-sidebar.active {
+    right: 0;
+}
+
+.donation-header {
+    padding: 1rem;
+}
+
+.donation-content {
+    padding: 1rem;
+}
+
+/* Custom styles for nav pills */
+.donation-content .nav-pills .nav-link {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.875rem;
+    border-radius: 4px;
+}
+
+.donation-content .nav-pills .nav-link.active {
+    background-color: #198754;
+}
+
+/* Custom styles for payment methods */
+.payment-methods img {
+    height: 20px;
+    object-fit: contain;
+}

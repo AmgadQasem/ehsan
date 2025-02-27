@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب</title>
+    <!-- Bootstrap RTL CSS -->
+    <link href="../assets/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="navbars-content">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 position-fixed w-100 border-bottom"
+            style="z-index: 1000; top: 0;">
+            <div class="w-100 px-3 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <!-- Sidebar Toggle Button -->
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebar" aria-controls="sidebar">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex flex-column gap-1 ms-2">
+                                <span class="bg-dark rounded-pill" style="width: 20px; height: 2px;"></span>
+                                <span class="bg-dark rounded-pill" style="width: 20px; height: 2px;"></span>
+                                <span class="bg-dark rounded-pill" style="width: 20px; height: 2px;"></span>
+                            </div>
+                        </div>
+                    </button>
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/images/logo.jpeg" alt="إحسان" class="logo" style="height: 40px;">
+                    </a>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+                    <!-- Mobile Navigation -->
+                    <div class="offcanvas-header">
+                        <img src="../assets/images/logo.jpeg" alt="إحسان" class="offcanvas-logo">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <ul class="navbar-nav mobile-nav">
+                            <!-- Mobile menu items with new design -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-link-content">
+                                        <i class="fas fa-home"></i>
+                                        <span>الرئيسية</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-link-content">
+                                        <i class="fas fa-hand-holding-heart"></i>
+                                        <span>وقف إحسان</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#donationCollapse">
+                                    <div class="nav-link-content">
+                                        <i class="fas fa-donate"></i>
+                                        <span>فرص التبرع</span>
+                                    </div>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="collapse" id="donationCollapse">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">التبرع بالدم</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">عرايس</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">الزكاة</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">هدية</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">الأضاحي</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#servicesCollapse">
+                                    <div class="nav-link-content">
+                                        <i class="fas fa-concierge-bell"></i>
+                                        <span>خدماتنا</span>
+                                    </div>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="collapse" id="servicesCollapse">
+                                    <ul class="navbar-nav">
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                التبرع بالدم
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                غراس
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                الزكاة
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                هدية
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                الأضاحي
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                الحملات
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                التبرع الدوري
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                التبرع بالرسائل
+                                            </a>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a href="#" class="mega-menu-link">
+                                                تطهير الاسهم
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#aboutCollapse">
+                                    <div class="nav-link-content">
+                                        <i class="fas fa-info-circle"></i>
+                                        <span>عن إحسان</span>
+                                    </div>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="collapse" id="aboutCollapse">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">من نحن</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">اللجان</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-link-content">
+                                        <i class="fas fa-users"></i>
+                                        <span>أبرز المحسنين</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-link-content">
+                                        <i class="fas fa-star"></i>
+                                        <span>سفراء غراس</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="nav-link-content">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>الفرص المكتملة</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Desktop Navigation -->
+                        <ul class="navbar-nav desktop-nav">
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    وقف إحسان
+                                </a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link rounded" data-mega-menu="donation">
+                                    فرص التبرع
+                                    <i class="fas fa-chevron-down me-1"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" data-mega-menu="services">
+                                    خدماتنا
+                                    <i class="fas fa-chevron-down me-1"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" data-mega-menu="about">
+                                    عن إحسان
+                                    <i class="fas fa-chevron-down me-1"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Buttons (Responsive) -->
+                <div class="d-flex gap-3 align-items-center ms-auto">
+                    <i class="fas fa-search fa-lg"></i>
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                    <a href="#" class="btn btn-success d-none d-lg-inline">تسجيل الدخول</a>
+                    <i class="fas fa-user fa-lg d-lg-none"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mega Menus (Desktop Only) -->
+        <div class="mega-menu" id="donationMenu">
+            <div class="mega-menu-content">
+                <div class="container-fluid px-5">
+                    <ul class="mega-menu-items">
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/1.jpeg" alt="التبرع بالدم">
+                                <span>التبرع بالدم</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/2.jpeg" alt="عرايس">
+                                <span>عرايس</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>الزكاة</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/4.jpeg" alt="هدية">
+                                <span>هدية</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/5.jpeg" alt="الأضاحي">
+                                <span>الأضاحي</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mega-menu" id="servicesMenu">
+            <div class="mega-menu-content">
+                <div class="container-fluid px-5">
+                    <ul class="mega-menu-items">
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>التبرع بالدم</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>غراس</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>الزكاة</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>هدية</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>الأضاحي</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>الحملات</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>التبرع الدوري</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>التبرع بالرسائل</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>تطهير الاسهم</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mega-menu" id="aboutMenu">
+            <div class="mega-menu-content">
+                <div class="container-fluid px-5">
+                    <ul class="mega-menu-items">
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>من نحن</span>
+                            </a>
+                        </li>
+                        <li class="mega-menu-item">
+                            <a href="#" class="mega-menu-link">
+                                <img src="../assets/images/3.jpeg" alt="الزكاة">
+                                <span>اللجان</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="p-0 mb-0">
+        <div class="row g-0" style="min-height: calc(100vh - 76px);">
+            <!-- Pattern Side -->
+            <div class="col-md-6 bg-success-dark text-white d-flex align-items-center justify-content-center d-none d-md-flex">
+                <div class="quran-verse">
+                    <p class="h3">وَأَحْسِنُوا ۛ إِنَّ اللَّهَ يُحِبُّ الْمُحْسِنِينَ</p>
+                </div>
+            </div>
+            <!-- Form Side -->
+            <div class="col-md-6 px-3 px-md-5  pt-5 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="mb-4 text-center">تسجيل الدخول</h2>
+                    <p class="text-center text-muted mb-4">سيتم إرسال رمز التحقق للرقم المدخل</p>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">رقم الجوال</label>
+                            <input type="text" class="form-control" id="phone" placeholder="05XXXXXXXX">
+                        </div>
+                        <div class="mb-3 justify-content-center d-flex">
+                            <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                        </div>
+                        <button type="submit" class="btn btn-light w-100 py-2 mb-3"
+                            style="background-color: #F5F5F5;"><a href="../index.html" class="text-decoration-none text-dark">إرسال رمز التحقق</a></button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <span class="text-muted">ليس لديك حساب؟</span>
+                        <a href="signupu.html" class="text-success text-decoration-none"> إنشاء حساب</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="flate-section">
+        <!-- Quick Donation Sidebar -->
+        <div class="donation-sidebar bg-light border-start" id="donationSidebar">
+            <div class="donation-header bg-white border-bottom">
+                <h6 class="mb-0 fw-semibold">تبرع سريع</h6>
+            </div>
+            <div class="donation-content bg-white">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-fill mb-3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#general">تبرع عام</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#general">وقف</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#general">تيسرت</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#general">المساجد</button>
+                    </li>
+                </ul>
+    
+                <!-- Tab content -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="general">
+                        <div class="btn-group w-100 mb-3" role="group">
+                            <input type="radio" class="btn-check" name="amount" id="amount10" value="10">
+                            <label class="btn btn-outline-success" for="amount10">10 رس</label>
+                            
+                            <input type="radio" class="btn-check" name="amount" id="amount50" value="50">
+                            <label class="btn btn-outline-success" for="amount50">50 رس</label>
+                            
+                            <input type="radio" class="btn-check" name="amount" id="amount100" value="100">
+                            <label class="btn btn-outline-success" for="amount100">100 رس</label>
+                        </div>
+    
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="customAmount" placeholder="مبلغ التبرع">
+                        </div>
+    
+                        <small class="text-muted d-block text-center mb-3">
+                            سيذهب تبرعك تلقائياً للحالات الأشد احتياجاً
+                        </small>
+    
+                        <div class="payment-methods bg-light rounded p-3 mb-3">
+                            <div class="d-flex justify-content-center gap-3">
+                                <i class="fab fa-cc-visa fa-2x"></i>
+                                <i class="fab fa-cc-mastercard fa-2x"></i>
+                                <i class="fab fa-cc-visa fa-2x"></i>
+                                <i class="fab fa-cc-mastercard fa-2x"></i>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-success w-100">تبرع الآن</button>
+                    </div>
+                    <!-- Add other tab panes as needed -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- Floating Button -->
+        <div class="floating-btn-container">
+            <button class="btn btn-primary " type="button" onclick="toggleDonationSidebar()">
+               
+                تبرع سريع
+                <i class="fas fa-hand-holding-heart me-2"></i>
+            </button>
+        </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-success-dark text-white py-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <!-- Column 1: نظرة عامة -->
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4">نظرة عامة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">عن إحسان</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">اللجان</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">التبرع بالرسائل النصية</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: الدعم والمساعدة -->
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-4">الدعم والمساعدة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">اتفاقية مستوى الخدمة</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">الأسئلة الشائعة</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">سياسة الخصوصية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">إمكانية الوصول</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: تواصل معنا -->
+                <div class="col-lg-3 mb-4 text-center">
+                    <h5 class="mb-4">تواصل معنا</h5>
+                    <div class="d-flex gap-3 mb-4 justify-content-center">
+                        <a href="#"
+                            class="text-white border rounded p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white border rounded p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <h6 class="mb-3">حمل تطبيق إحسان</h6>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="#"
+                            class="text-white border rounded p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;">
+                            <i class="fab fa-google-play me-2"></i>
+                        </a>
+                        <a href="#"
+                            class="text-white border rounded p-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;">
+                            <i class="fab fa-apple me-2"></i>
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <div class="d-flex gap-3 justify-content-center mb-4">
+                            <img src="../assets/images/b1.jpeg" alt="SDAIA" style="height: 40px;">
+                            <img src="../assets/images/b2.jpeg" alt="Vision 2030" style="height: 40px;">
+                            <img src="../assets/images/b3.jpeg" alt="NCNP" style="height: 40px;">
+                        </div>
+                        <small>جميع الحقوق محفوظة لمنصة إحسان © 2025</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>
